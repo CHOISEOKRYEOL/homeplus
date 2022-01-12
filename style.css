@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -18,6 +19,7 @@ button {
     background-color: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 a {
@@ -74,24 +76,46 @@ a {
 
 /* nav */
 
+#nav {
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+
 #nav .container {
-    padding: 0;
+    padding-left: 75px;
+    margin: auto;
+    width: 1200px;
+}
+
+.nav {
+    margin-top: 20px;
 }
 
 .nav ul {
+    position: relative;
     width: 1530px;
+    height: 43px;
     display: flex;
     flex-direction: row;
     padding-left: 0;
-    border-bottom: 2px solid red;
+}
+
+.nav button {
+    background: url(./img/spritesheet.png) -1525px -4px no-repeat transparent;
+    font-weight: 500;
+    font-size: 15px;
+    width: 150px;
+    padding-top: 2px;
+    padding-right: 29px;
+    color: white;
+}
+
+.nav button span {
+    line-height: 0.5;
 }
 
 .nav ul li {
     font-weight: 500;
     font-size: 15px;
-    padding-right: 52px;
-}
-
-.nav ul li:nth-child(1) {
-    padding-left: 150px;
+    padding: 10px 46px 0 0;
 }
