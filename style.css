@@ -11,6 +11,10 @@ body {
     padding: 0 100px;
 }
 
+ul {
+    margin: 0;
+}
+
 li {
     list-style: none;
 }
@@ -60,8 +64,9 @@ a {
 
 .search button {
     position: absolute;
-    top: 35px;
-    right: 10px;
+    font-size: 20px;
+    top: 34px;
+    right: 12px;
 }
 
 .icon {
