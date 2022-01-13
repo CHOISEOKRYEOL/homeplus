@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" async></script>
     <title>Document</title>
 </head>
 <body>
@@ -34,6 +37,8 @@
                 </div>
             </div>
         </section>
+        <!-- //header -->
+
         <nav id="nav">
             <div class="container">
                 <div class="nav">
@@ -58,6 +63,29 @@
                 </div>
             </div>
         </nav>
+        <!-- //nav -->
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://image.homeplus.kr/ba/99c214a1-9a58-4d1b-849e-7576d720be0b" alt="이미지1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://image.homeplus.kr/ba/340cf38b-9a04-4954-b43b-904cc060d77c" alt="이미지2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://image.homeplus.kr/ba/b41882e2-0008-4657-85ad-fc6d2306407f" alt="이미지3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://image.homeplus.kr/ba/e08240b0-b663-45fb-b223-acf7c011dee3" alt="이미지4">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- //swiper -->
+
         <section class="menu"></section>
         <section class="banner"></section>
         <main class="content1"></main>
