@@ -13,6 +13,7 @@ body {
 
 ul {
     margin: 0;
+    padding: 0;
 }
 
 li {
@@ -125,11 +126,16 @@ a {
     padding: 10px 52px 0 0;
 }
 
+.nav ul a:hover {
+    color: red;
+}
+
 /* Slider */
 .swiper {
     width: 100%;
     height: 100%;
     padding-top: 20px;
+    margin-bottom: 50px;
 }
 
 .swiper-slide {
@@ -154,7 +160,7 @@ a {
 
 .swiper-slide img {
     display: block;
-    width: 1220px;
+    width: 1218px;
     height: 100%;
     object-fit: cover;
 }
@@ -162,4 +168,82 @@ a {
 .swiper {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* menu */
+
+#menu {
+    border-top: 1px solid rgba(184, 182, 182, 0.199);
+    border-bottom: 1px solid rgba(184, 182, 182, 0.199);
+}
+
+
+.menu ul {
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: left;
+    width: 10%;
+    box-sizing: border-box;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.menu ul li a {
+    padding: 5px 0;
+}
+
+.menu ul li img {
+    width: 80px;
+}
+
+.menu ul li span {
+    display: block;
+}
+
+/* banner */
+
+.banner {
+    padding: 55px 0;
+}
+
+.banner .swiper .swiper-slide img {
+    width: 1218px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* content1 */
+
+.content1 {
+    text-align: center;
+}
+
+.content1 ul {
+    overflow: hidden;
+}
+
+.content1 ul li {
+    position: relative;
+    float: left;
+    padding: 30px 73.5px;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: rgb(82, 81, 81);
+}
+
+.content1_menu ul li::after {
+    content: '';
+    width: 2px;
+    height: 15px;
+    background-color: rgb(209, 209, 209);
+    position: absolute;
+    top: 36px;
+    right: 0;
+}
+
+.content1_menu ul li:last-child::after {
+    width: 0;
 }
