@@ -265,6 +265,64 @@ a {
 
 .content1_items .item {
     float: left;
+    text-align: left;
+    padding: 20px 10px 35px 10px;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.content1_items .item .sale {
+    display: inline-block;
+    padding: 15px 0 10px 0;
+}
+
+.content1_items .item .sale del {
+    color: rgb(156, 156, 156);
+}
+
+.content1_items .item .sale button {
+    padding-left: 5px;
+}
+
+.content1_items .item .price {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.content1_items .item .price big {
+    font-size: 25px;
+}
+
+.content1_items .item .price .red {
+    color: red;
+    font-weight: 600;
+}
+
+.content1_items .item .price .black {
+    font-weight: 600;
+}
+
+.content1_items .item .price small {
+    font-size: 12px;
+}
+
+.content1_items .item .score {
+    display: inline-block;
+    padding-bottom: 3px;
+} 
+
+.content1_items .item .score i {
+    color: orange;
+}
+
+.content1_items .item .score small {
+    font-size: 13px;
+    color: rgb(172, 172, 172);
+}
+
+.content1_items .item .addsale {
+    font-weight: bold;
+    color: rgb(112, 111, 111);
 }
 
 .content1_items .item a {
@@ -272,6 +330,7 @@ a {
 }
 
 .content1_items .item a img {
+    padding-bottom: 10px;
     border-radius: 2px;
     transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
