@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./main.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -184,272 +186,790 @@
                         <img src="https://front.homeplus.co.kr/static/images/main/txt_saja03.png" alt="logo">
                     </div>
                     <div class="content1_menu">
-                        <ul>
-                            <li><button class="active">★MD추천☆</button></li>
-                            <li><button>신선한</button></li>
-                            <li><button>식품♣</button></li>
-                            <li><button>간편한</button></li>
-                            <li><button>가공.필템◇</button></li>
-                            <li><button>생활용품◎</button></li>
-                        </ul>
-                    </div>
-                    <div class="content1_items">
-                        <ul class="items one">
-                            <li class="item one">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item two">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item three">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item four">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item five">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item six">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                        </ul>
-                        <ul class="items two">
-                            <li class="item one">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/054169150s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item two">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item three">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item four">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item five">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                            <li class="item six">
-                                <a href="#">
-                                    <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
-                                    <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
-                                </a>
-                                <div class="event1">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
-                                    <span>행사<br>상품</span>
-                                </div>
-                                <div class="event2">
-                                    <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
-                                </div>
-                                <div class="item_nav">
-                                    <i class="fas fa-plus-square"></i>
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                                <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
-                                <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
-                                <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
-                                <span class="addsale"><small>3,000 카드할인</small></span>
-                            </li>
-                        </ul>
+                        <div class="menu_btn">
+                            <ul>
+                                <li class="active"><a>★MD추천★</a>
+                                    <ul class="items one show">
+                                        <li class="item one">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item two">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item three">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item four">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item five">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item six">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>신선한</a>
+                                    <ul class="items one show">
+                                        <li class="item one">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item two">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item three">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item four">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item five">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item six">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>식품♣</a>
+                                    <ul class="items one show">
+                                        <li class="item one">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item two">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item three">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item four">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item five">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item six">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>간편한</a>
+                                    <ul class="items one show">
+                                        <li class="item one">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item two">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item three">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item four">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item five">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item six">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>가공.필템◇</a>
+                                    <ul class="items one show">
+                                        <li class="item one">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item two">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item three">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item four">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item five">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item six">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>생활용품◎</a>
+                                    <ul class="items one show">
+                                        <li class="item one">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item two">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item three">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item four">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item five">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                        <li class="item six">
+                                            <a href="#">
+                                                <img src="https://image.homeplus.kr/it/115055108s0374" alt="이미지1"><br>
+                                                <span>새코롬 돌코롬 제주밀감 3.5KG(박스)</span><br>
+                                            </a>
+                                            <div class="event1">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_unit_flag.png" alt="행사상품" class="img1">
+                                                <span>행사<br>상품</span>
+                                            </div>
+                                            <div class="event2">
+                                                <img src="https://front.homeplus.co.kr/static/images/units/ico_delivery_hdrct_56.png" alt="마트직송" class="img2">
+                                            </div>
+                                            <div class="item_nav">
+                                                <i class="fas fa-plus-square"></i>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                            <span class="sale"><del>12,900원</del><button class="sale_btn"><i class="fas fa-caret-square-down"></i></button></span><br>
+                                            <span class="price"><span class="red">23%</span>  <span class="black">9,990</span><small>원 (100G당 285.4원)</small></span><br>
+                                            <span class="score"><small><i class="far fa-star"></i>4.6(10,286건) | 월62,891개 구매</small></span><br>
+                                            <span class="addsale"><small>3,000 카드할인</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -458,6 +978,5 @@
         <section class="content3"></section>
         <footer class="footer"></footer>
     </div>
-    <script src="./main.js" async></script>
 </body>
 </html>

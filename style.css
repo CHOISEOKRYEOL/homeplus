@@ -177,7 +177,6 @@ a {
     border-bottom: 1px solid rgba(184, 182, 182, 0.199);
 }
 
-
 .menu ul {
     overflow: hidden;
 }
@@ -221,52 +220,26 @@ a {
     text-align: center;
 }
 
-.content1 ul {
-    overflow: hidden;
-}
-
-.content1_menu .active {
+.content1_menu .menu_btn button.active {
     color: red;
+    border-bottom: 1px solid red;
 }
 
-.content1_menu ul li {
-    position: relative;
+.menu_btn ul li {
     float: left;
-    padding: 30px 73.5px;
-    box-sizing: border-box;
-    font-weight: 400;
-    color: rgb(82, 81, 81);
 }
 
-.content1_menu ul {
-    border-bottom: 1px solid rgb(221, 221, 221);
-}
-
-.content1_menu ul li button {
-    font-size: 16px;
-}
-
-.content1_menu ul li::after {
-    content: '';
-    width: 2px;
-    height: 15px;
-    background-color: rgb(209, 209, 209);
-    position: absolute;
-    top: 36px;
-    right: 0;
-}
-
-.content1_menu ul li:last-child::after {
+.content1_menu button:last-child::after {
     width: 0;
 }
 
 /* content1_items */
 
-.content1_items {
+.menu_btn {
     font-family: 'Roboto', sans-serif;
 }
 
-.content1_items .item {
+.menu_btn .item {
     position: relative;
     float: left;
     text-align: left;
@@ -275,72 +248,72 @@ a {
     box-sizing: border-box;
 }
 
-.content1_items .item .sale {
+.menu_btn .item .sale {
     display: inline-block;
     padding: 15px 0 10px 0;
 }
 
-.content1_items .item .sale del {
+.menu_btn .item .sale del {
     color: rgb(156, 156, 156);
 }
 
-.content1_items .item .sale button {
+.menu_btn .item .sale button {
     padding-left: 5px;
 }
 
-.content1_items .item .price {
+.menu_btn .item .price {
     display: inline-block;
     padding-bottom: 7px;
 }
 
-.content1_items .item .price big {
+.menu_btn .item .price big {
     font-size: 25px;
 }
 
-.content1_items .item .price .red {
+.menu_btn .item .price .red {
     color: red;
     font-weight: 600;
 }
 
-.content1_items .item .price .black {
+.menu_btn .item .price .black {
     font-weight: 600;
 }
 
-.content1_items .item .price small {
+.menu_btn .item .price small {
     font-size: 12px;
 }
 
-.content1_items .item .score {
+.menu_btn .item .score {
     display: inline-block;
     padding-bottom: 3px;
 } 
 
-.content1_items .item .score i {
+.menu_btn .item .score i {
     color: orange;
     padding-right: 3px;
 }
 
-.content1_items .item .score small {
+.menu_btn .item .score small {
     font-size: 13px;
     color: rgb(172, 172, 172);
 }
 
-.content1_items .item .addsale {
+.menu_btn .item .addsale {
     font-weight: bold;
     color: rgb(112, 111, 111);
 }
 
-.content1_items .item a img {
+.menu_btn .item a img {
     padding-bottom: 10px;
     border-radius: 2px;
     transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
-.content1_items .item a img:hover {
+.menu_btn .item a img:hover {
     transform: scale(1.02);
 }
 
-.content1_items .item .item_nav {
+.menu_btn .item .item_nav {
     display: none;
     width: 90%;
     position: absolute;
@@ -350,24 +323,24 @@ a {
     text-align: center;
 }
 
-.content1_items .item .item_nav.show {
+.menu_btn .item .item_nav.show {
     display: block;
 }
 
-.content1_items .item .item_nav i {
+.menu_btn .item .item_nav i {
     color: white;
     font-size: 40px;
     padding: 5px 25px;
 }
 
-.content1_items .item .event1 img {
+.menu_btn .item .event1 img {
     position: absolute;
     top: 21px;
     left: 11px;
     width: 60px;
 }
 
-.content1_items .item .event1 span {
+.menu_btn .item .event1 span {
     position: absolute;
     top: 30px;
     left: 26px;
@@ -376,21 +349,18 @@ a {
     font-weight: 700;
 }
 
-.content1_items .item .event2 img {
+.menu_btn .item .event2 img {
     position: absolute;
     top: 21px;
     right: 39px;
 }
 
-.content1_items .item .event1.show,
-.content1_items .item .event2.show {
+.menu_btn .event1.show,
+.menu_btn .event2.show {
     display: none;
 }
 
-.content1_items .items.one.none {
-    display: none;
-}
-
-.content1_items .items.two.none {
-    display: none;
+.menu_btn .items.one.show,
+.menu_btn .items.show {
+    display: block;
 }
