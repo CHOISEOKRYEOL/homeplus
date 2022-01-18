@@ -14,18 +14,18 @@ var swiper = new Swiper(".swiper", {
 });
 
 // img hover시 생성
-let item1 = document.querySelector(".content1_menu .menu_btn > ul > li > ul > li > a > img");
-console.log(item1);
-item1.addEventListener("mouseover", () => {
-    document.querySelectorAll(".content1_menu .menu_btn .item.one > div").forEach(el => {
-        el.classList.add("show");
-    });
-});
-item1.addEventListener("mouseout", () => {
-    document.querySelectorAll(".content1_menu .menu_btn .item.one > div").forEach(el => {
-        el.classList.remove("show");
-    });
-});
+// let item1 = document.querySelector(".content1_menu .menu_btn > ul > li > ul > li > a > img");
+// console.log(item1);
+// item1.addEventListener("mouseover", () => {
+//     document.querySelectorAll(".content1_menu .menu_btn .item.one > div").forEach(el => {
+//         el.classList.add("show");
+//     });
+// });
+// item1.addEventListener("mouseout", () => {
+//     document.querySelectorAll(".content1_menu .menu_btn .item.one > div").forEach(el => {
+//         el.classList.remove("show");
+//     });
+// });
 // let item2 = document.querySelector(".content1_items .items.one .item.two a img");
 // item2.addEventListener("mouseover", () => {
 //     document.querySelectorAll(".content1_items .items.one .item.two div").forEach(el => {
@@ -86,3 +86,43 @@ item1.addEventListener("mouseout", () => {
 // let $menu_btn = $(".menu_btn");
 // console.log($menu_btn);
 // $menu_btn.find("ul > ul").hide();
+
+$(document).ready(function(){
+
+    $('.menu_btn1 > ul > li').on("click", function(e) {
+
+        e.preventDefault();
+
+        $('.menu_btn1 > ul > li').removeClass("active");
+        $(this).addClass("active");
+
+        var tab_id = $(this).attr('data-tab');
+
+		$('.menu_btn1 > ul > li').removeClass('current');
+		$('.content1_menu > .items').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+    });
+
+});
+
+$(document).ready(function(){
+
+    $('.menu_btn2 > ul > li').on("click", function(e) {
+
+        e.preventDefault();
+
+        $('.menu_btn2 > ul > li').removeClass("active");
+        $(this).addClass("active");
+
+        var tab_id = $(this).attr('data-tab');
+
+		$('.menu_btn2 > ul > li').removeClass('current');
+		$('.content2_menu > .items').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+    });
+
+});
