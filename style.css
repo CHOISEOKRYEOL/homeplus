@@ -744,19 +744,23 @@ a {
     width: 100%;
     display: inline-block;
     margin-top: 70px;
+}
 
+.footer .footer_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer .footer_nav ul li {
     position: relative;
     font-size: 12px;
     display: inline-block;
-    float: left;
     box-sizing: border-box;
     padding: 0 20px;
 }
 
-.footer .footer_nav > ul > li::after {
+.footer .footer_nav .footer_left > ul > li::after {
     content: '';
     width: 1px;
     height: 16px;
@@ -765,7 +769,7 @@ a {
     right: 0;
     background: rgba(226, 226, 226, 0.747);
 }
-.footer .footer_nav > ul > li .red {
+.footer .footer_nav .footer_left > ul > li .red {
     color: red;
 }
 
