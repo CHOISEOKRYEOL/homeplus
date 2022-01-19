@@ -380,6 +380,11 @@ a {
     right: 39px;
 }
 
+.content1_menu .items .item .event1.show,
+.content1_menu .items .item .event2.show {
+    display: none;
+}
+
 /* content2 menu */
 
 .content2 {
@@ -547,4 +552,239 @@ a {
     position: absolute;
     top: 21px;
     right: 39px;
+}
+
+.content2_menu .items .item .event1.show,
+.content2_menu .items .item .event2.show {
+    display: none;
+}
+
+/* content3 */
+
+.content3 {
+    text-align: center;
+}
+
+.content3 .menu_btn3 {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    line-height: 2px;
+}
+
+.content3 .menu_btn3 ul {
+    display: inline-block;
+}
+
+.content3 .menu_btn3 ul li {
+    position: relative;
+    float: left;
+    padding: 30px 73px;
+}
+
+.content3 .menu_btn3 ul li.active {
+    border-bottom: 1px solid red;
+}
+
+.content3 .menu_btn3 ul li::after {
+    content: '';
+    width: 1px;
+    height: 17px;
+    background: rgb(173, 173, 173);
+    position: absolute;
+    top: 33px;
+    right: 0;
+}
+
+.menu_btn3 ul li:last-child::after {
+    width: 0;
+}
+
+.content3_menu .items {
+    display: none;
+}
+
+.content3_menu .items.current {
+    display: inherit;
+}
+
+.content3_menu .items ul li {
+    width: 33%;
+    float: left;
+}
+
+.content3_menu .items .item {
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 20px 10px 35px 10px;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.content3_menu .items .item .sale {
+    display: inline-block;
+    padding: 15px 0 10px 0;
+}
+
+.content3_menu .items .item .sale del {
+    color: rgb(156, 156, 156);
+}
+
+.content3_menu .items .item .sale button {
+    padding-left: 5px;
+}
+
+.content3_menu .items .item .price {
+    display: inline-block;
+    padding-bottom: 7px;
+}
+
+.content3_menu .items .item .price big {
+    font-size: 25px;
+}
+
+.content3_menu .items .item .price .red {
+    color: red;
+    font-weight: 600;
+}
+
+.content3_menu .items .item .price .black {
+    font-weight: 600;
+}
+
+.content3_menu .items .item .price small {
+    font-size: 12px;
+}
+
+.content3_menu .items .item .score {
+    display: inline-block;
+    padding-bottom: 3px;
+} 
+
+.content3_menu .items .item .score i {
+    color: orange;
+    padding-right: 3px;
+}
+
+.content3_menu .items .item .score small {
+    font-size: 13px;
+    color: rgb(172, 172, 172);
+}
+
+.content3_menu .items .item .addsale {
+    font-weight: bold;
+    color: rgb(112, 111, 111);
+}
+
+.content3_menu .items .item a img {
+    padding-bottom: 10px;
+    border-radius: 2px;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+
+.content3_menu .items .item a img:hover {
+    transform: scale(1.02);
+}
+
+.content3_menu .items .item .item_nav {
+    display: none;
+    width: 90%;
+    position: absolute;
+    left: 7px;
+    top: 347px;
+    background-color: rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+.content3_menu .items .item .item_nav.show {
+    display: block;
+}
+
+.content3_menu .items .item .item_nav i {
+    color: white;
+    font-size: 40px;
+    padding: 5px 25px;
+}
+
+.content3_menu .items .item .event1 img {
+    position: absolute;
+    top: 21px;
+    left: 11px;
+    width: 60px;
+}
+
+.content3_menu .items .item .event1 span {
+    position: absolute;
+    top: 30px;
+    left: 26px;
+    color: red;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content3_menu .items .item .event2 img {
+    position: absolute;
+    top: 21px;
+    right: 39px;
+}
+
+.content3_menu .items .item .event1.show,
+.content3_menu .items .item .event2.show {
+    display: none;
+}
+
+/* footer */
+
+#footer {
+    border-top: 1px solid rgb(117, 117, 117);
+    border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+.footer {
+    width: 100%;
+    display: inline-block;
+    margin-top: 70px;
+
+}
+
+.footer .footer_nav ul li {
+    position: relative;
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.footer .footer_nav > ul > li::after {
+    content: '';
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(226, 226, 226, 0.747);
+}
+.footer .footer_nav > ul > li .red {
+    color: red;
+}
+
+.footer .footer_nav ul li a {
+    color: rgb(117, 117, 117);
+}
+
+.footer .footer_nav .footer_right .family {
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    border: 1px solid rgb(117, 117, 117);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer .footer_nav .footer_right ul li {
+    padding: 0 15px;
+}
+
+.footer .footer_nav .footer_right ul li:first-child {
+    padding-left: 140px;
 }
