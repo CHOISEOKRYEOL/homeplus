@@ -342,7 +342,7 @@ a {
     display: none;
     width: 90%;
     position: absolute;
-    left: 7px;
+    left: 22px;
     top: 347px;
     background-color: rgba(0, 0, 0, 0.37);
     text-align: center;
@@ -361,14 +361,14 @@ a {
 .content1_menu .items .item .event1 img {
     position: absolute;
     top: 21px;
-    left: 11px;
+    left: 23px;
     width: 60px;
 }
 
 .content1_menu .items .item .event1 span {
     position: absolute;
     top: 30px;
-    left: 26px;
+    left: 36px;
     color: red;
     font-size: 16px;
     font-weight: 700;
@@ -377,7 +377,7 @@ a {
 .content1_menu .items .item .event2 img {
     position: absolute;
     top: 21px;
-    right: 39px;
+    right: 25px;
 }
 
 .content1_menu .items .item .event1.show,
@@ -515,7 +515,7 @@ a {
     display: none;
     width: 90%;
     position: absolute;
-    left: 7px;
+    left: 22px;
     top: 347px;
     background-color: rgba(0, 0, 0, 0.37);
     text-align: center;
@@ -534,14 +534,14 @@ a {
 .content2_menu .items .item .event1 img {
     position: absolute;
     top: 21px;
-    left: 11px;
+    left: 23px;
     width: 60px;
 }
 
 .content2_menu .items .item .event1 span {
     position: absolute;
     top: 30px;
-    left: 26px;
+    left: 36px;
     color: red;
     font-size: 16px;
     font-weight: 700;
@@ -550,7 +550,7 @@ a {
 .content2_menu .items .item .event2 img {
     position: absolute;
     top: 21px;
-    right: 39px;
+    right: 25px;
 }
 
 .content2_menu .items .item .event1.show,
@@ -688,7 +688,7 @@ a {
     display: none;
     width: 90%;
     position: absolute;
-    left: 7px;
+    left: 22px;
     top: 347px;
     background-color: rgba(0, 0, 0, 0.37);
     text-align: center;
@@ -707,14 +707,14 @@ a {
 .content3_menu .items .item .event1 img {
     position: absolute;
     top: 21px;
-    left: 11px;
+    left: 23px;
     width: 60px;
 }
 
 .content3_menu .items .item .event1 span {
     position: absolute;
     top: 30px;
-    left: 26px;
+    left: 36px;
     color: red;
     font-size: 16px;
     font-weight: 700;
@@ -723,7 +723,7 @@ a {
 .content3_menu .items .item .event2 img {
     position: absolute;
     top: 21px;
-    right: 39px;
+    right: 25px;
 }
 
 .content3_menu .items .item .event1.show,
@@ -747,6 +747,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid rgb(117, 117, 117);
+    border-bottom: 1px solid rgb(117, 117, 117);
 }
 
 .footer .footer_nav ul li {
@@ -782,6 +784,8 @@ a {
     font-size: 15px;
     color: rgb(117, 117, 117);
     border: 1px solid rgb(117, 117, 117);
+    margin-top: -1px;
+    margin-bottom: -1px;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -799,6 +803,7 @@ a {
 .footer_content {
     display: flex;
     font-size: 11px;
+    padding-top: 30px;
 }
 
 .footer_content button {
@@ -854,6 +859,22 @@ a {
     padding: 5px 0;
 }
 
+.footer_content .footer_right {
+    position: relative;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.footer_content .footer_right::before {
+    content: '';
+    width: 1px;
+    height: 150px;
+    background: rgba(226, 226, 226, 0.747);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .footer_right .email,
 .footer_right .time {
     font-size: 12px;
@@ -888,4 +909,43 @@ a {
 
 .footer_right .content_bottom h4 {
     padding-right: 10px;
+}
+
+/* right menu */
+
+.right_menu {
+    position: fixed;
+    text-align: center;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+    font-size: 11px;
+    background: rgb(244, 246, 249);
+    border-radius: 5px;
+}
+
+.right_menu > div {
+    padding: 15px 5px;
+}
+
+.right_menu > div a {
+    display: flex;
+    flex-direction: column;
+}
+
+.topbutton {
+    display: inline-block;
+    width: 100%;
+    font-size: 11px;
+    background: rgb(51, 51, 51);
+}
+
+.topbutton > button {
+    padding: 5px 10px 0 0;
+    color: #fff;
+}
+
+.topbutton span {
+    display: inline-block;
+    padding-top: 5px;
 }

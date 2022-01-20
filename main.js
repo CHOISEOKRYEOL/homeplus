@@ -191,5 +191,10 @@ $(document).ready(function(){
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
     });
+});
 
+// topbutton
+
+document.querySelector(".topbutton").addEventListener("click", (e) => {
+    document.querySelector("#header").scrollIntoView({behavior:'smooth'});
 });
