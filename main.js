@@ -216,7 +216,6 @@ $(document).ready(function(){
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
     });
-
 });
 
 $(document).ready(function(){
@@ -232,6 +231,25 @@ $(document).ready(function(){
 
 		$('.menu_btn2 > ul > li').removeClass('current');
 		$('.content2_menu > .items').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+    });
+});
+
+$(document).ready(function(){
+
+    $('.menu_btn3 > ul > li').on("click", function(e) {
+
+        e.preventDefault();
+
+        $('.menu_btn3 > ul > li').removeClass("active");
+        $(this).addClass("active");
+
+        var tab_id = $(this).attr('data-tab');
+
+		$('.menu_btn3 > ul > li').removeClass('current');
+		$('.content3_menu > .items').removeClass('current');
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
