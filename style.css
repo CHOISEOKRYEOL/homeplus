@@ -205,7 +205,6 @@ a {
 /* banner */
 
 .banner {
-    padding: 55px 0;
 }
 
 .banner .swiper .swiper-slide img {
@@ -219,6 +218,8 @@ a {
 
 .content1 {
     text-align: center;
+    overflow: hidden;
+    padding-top: 75px;
 }
 
 /* content1_items */
@@ -227,11 +228,15 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+.menu_btn1 ul {
+    overflow: hidden;
+}
+
 .menu_btn1 ul li {
     position: relative;
     float: left;
     padding: 30px 73px;
-    border-bottom: 1px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .menu_btn1 ul li.active {
@@ -254,6 +259,7 @@ a {
 
 .content1_menu .items {
     display: none;
+    overflow: hidden;
 }
 
 .content1_menu .items.current {
@@ -389,16 +395,18 @@ a {
 
 .content2 {
     text-align: center;
+    padding-top: 150px;
 }
 
 .content2 .menu_btn2 {
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(230, 230, 230);
     line-height: 2px;
 }
 
 .content2 .menu_btn2 ul {
     display: inline-block;
+    overflow: hidden;
 }
 
 .content2 .menu_btn2 ul li {
@@ -427,10 +435,15 @@ a {
 
 .content2_menu .items {
     display: none;
+    overflow: hidden;
 }
 
 .content2_menu .items.current {
     display: inherit;
+}
+
+.content2_menu .items ul {
+    overflow: hidden;
 }
 
 .content2_menu .items ul li {
@@ -562,16 +575,18 @@ a {
 
 .content3 {
     text-align: center;
+    padding-top: 150px;
 }
 
 .content3 .menu_btn3 {
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(230, 230, 230);
     line-height: 2px;
 }
 
 .content3 .menu_btn3 ul {
     display: inline-block;
+    overflow: hidden;
 }
 
 .content3 .menu_btn3 ul li {
@@ -604,6 +619,10 @@ a {
 
 .content3_menu .items.current {
     display: inherit;
+}
+
+.content3_menu .items ul {
+    overflow: hidden;
 }
 
 .content3_menu .items ul li {
@@ -741,6 +760,7 @@ a {
     width: 100%;
     display: inline-block;
     margin-top: 70px;
+    padding-top: 50px;
 }
 
 .footer .footer_nav {
@@ -948,4 +968,41 @@ a {
 .topbutton span {
     display: inline-block;
     padding-top: 5px;
+}
+
+/* nav drop */
+
+.menu_btn1.drop {
+    position: fixed;
+    animation: down 0.5s ease;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu_btn2.drop {
+    position: fixed;
+    animation: down 0.5s ease;
+    top: 0;
+    left: 440px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu_btn3.drop {
+    position: fixed;
+    animation: down 0.5s ease;
+    top: 0;
+    left: 337px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes down {
+    0%{
+        transform: translateY(-50px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
 }

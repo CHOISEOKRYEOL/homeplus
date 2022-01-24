@@ -261,3 +261,50 @@ $(document).ready(function(){
 document.querySelector(".topbutton").addEventListener("click", (e) => {
     document.querySelector("#header").scrollIntoView({behavior:'smooth'});
 });
+
+// nav drop
+
+let menu_btn1 = document.querySelector(".menu_btn1");
+
+window.addEventListener("scroll", (e) => {
+    e.preventDefault();
+    let scrolly = window.scrollY || document.documentElement.scrollTop;
+    let menutop = document.querySelector(".content1_menu").offsetTop;
+    let content2 = document.querySelector(".content2").offsetTop;
+
+    if(scrolly >= menutop && scrolly <= content2) {
+        menu_btn1.classList.add("drop");
+    } else {
+        menu_btn1.classList.remove("drop");
+    }
+});
+
+let menu_btn2 = document.querySelector(".menu_btn2");
+
+window.addEventListener("scroll", (e) => {
+    e.preventDefault();
+    let scrolly = window.scrollY || document.documentElement.scrollTop;
+    let menutop = document.querySelector(".content2_menu").offsetTop;
+    let content3 = document.querySelector(".content3").offsetTop;
+
+    if(scrolly >= menutop && scrolly <= content3) {
+        menu_btn2.classList.add("drop");
+    } else {
+        menu_btn2.classList.remove("drop");
+    }
+});
+
+let menu_btn3 = document.querySelector(".menu_btn3");
+
+window.addEventListener("scroll", (e) => {
+    e.preventDefault();
+    let scrolly = window.scrollY || document.documentElement.scrollTop;
+    let menutop = document.querySelector(".content3_menu").offsetTop;
+    let footer = document.querySelector(".footer").offsetTop;
+
+    if(scrolly >= menutop && scrolly <= footer) {
+        menu_btn3.classList.add("drop");
+    } else {
+        menu_btn3.classList.remove("drop");
+    }
+});
